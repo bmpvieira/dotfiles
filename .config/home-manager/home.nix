@@ -67,8 +67,8 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  programs.doom-emacs = {
-    enable = true;
-    doomPrivateDir = ./doom.d;
-  };
+  # programs.doom-emacs = {
+  #   enable = false;
+  #   doomPrivateDir = ./doom.d;
+  # };
 }
