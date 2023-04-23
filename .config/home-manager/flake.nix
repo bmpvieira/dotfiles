@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of vscode";
+  description = "Home Manager configuration of bmpvieira";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
@@ -16,7 +16,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations.vscode = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.bmpvieira = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
