@@ -62,11 +62,21 @@
   #
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    # EDITOR = "neovim";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    withNodeJs = true;
+    withRuby = false;
+    withPython3 = true;
+    defaultEditor = true;
+  };
   # programs.doom-emacs = {
   #   enable = false;
   #   doomPrivateDir = ./doom.d;
