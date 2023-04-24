@@ -1,5 +1,5 @@
 #/bin/bash
 git submodule update --init --recursive
-for file in .[^.]*; do
-  ln -s $(pwd)/$file $HOME/$file
+for file in .config/*; do
+  cp -r $file $HOME/$file
 done
